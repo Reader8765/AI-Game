@@ -20,8 +20,8 @@ class Global {
     this.keyCheck = {};
   }
   update() {
-    Object.keys(this.users).map(user => {
-      this.users[user].update();
+    Object.values(this.users).map(user => {
+      user.update();
     });
   }
   newUser(name, image, x, y, keys) {
